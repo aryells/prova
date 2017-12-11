@@ -1,0 +1,76 @@
+@relation analise_credito
+
+@attribute yearsOld REAL
+@attribute gender {M, F}
+@attribute status {solteiro, casado, divorciado, viuva}
+@attribute dependent REAL
+@attribute income REAL
+@attribute result {reprovado, baixa}
+
+@data
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+56,M,divorciado,2,2000,reprovado
+45,F,divorciado,1,2000,reprovado
+63,F,viuva,3,1500,reprovado
+19,M,solteiro,1,400,baixa
+16,M,solteiro,0,500,baixa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

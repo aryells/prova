@@ -1,0 +1,50 @@
+<form novalidate name="formulario" class="row" ng-submit="submit()">
+    <div class="col-md-12">
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input name="name" class="form-control" ng-model="user.name" required>
+        </div>
+
+        <div class="form-group">
+            <label>CPF</label>
+            <input name="cpf" class="form-control" ng-model="user.cpf" required>
+        </div>
+
+        <div class="form-group">
+            <label>Idade</label>
+            <input name="yearsOld" class="form-control" ng-model="user.yearsOld" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gênero</label>
+            <select class="form-control" name="gender" ng-model="user.gender" ng-options="item.value as item.name for item in config.gender" required></select>
+        </div>
+
+        <div class="form-group ">
+            <label>Estado Civil</label>
+            <select class="form-control" name="status " ng-model="user.status" ng-options="item.value as item.name for item in config.status" required></select>
+        </div>
+
+        <div class="form-group ">
+            <label>Estado</label>
+            <input name="state " class="form-control " ng-model="user.state " required>
+        </div>
+
+        <div class="form-group ">
+            <label>Dependentes</label>
+            <input name="dependent " class="form-control " ng-model="user.dependent " required>
+        </div>
+
+        <div class="form-group ">
+            <label>Renda</label>
+            <input name="income " class="form-control " ng-model="user.income " required>
+        </div>
+
+        <button type="submit " class="btn btn-primary " ng-disabled="formulario.$invalid ">
+            Salvar
+        </button>
+        <a href="/#!/users " class="btn btn-primary ">Voltar</a>
+        <hr>
+    </div>
+</form>

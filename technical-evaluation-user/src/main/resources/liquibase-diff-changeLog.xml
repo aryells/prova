@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+	<changeSet author="aryel (generated)" id="1512784443835-1">
+		<createTable tableName="User">
+			<column autoIncrement="true" name="id" type="BIGINT">
+				<constraints primaryKey="true" primaryKeyName="UserPK" />
+			</column>
+			<column name="cpf" type="VARCHAR(255)" />
+			<column name="dependent" type="BIGINT" />
+			<column name="income" type="DECIMAL(10, 2)" />
+			<column name="name" type="VARCHAR(255)" />
+			<column name="gender" type="VARCHAR(255)" />
+			<column name="state" type="VARCHAR(255)" />
+			<column name="status" type="VARCHAR(255)" />
+			<column name="years_old" type="BIGINT" />
+		</createTable>
+	</changeSet>
+	<changeSet author="aryel (generated)" id="1512784443835-2">
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Lucas','64793808190',28,'M','solteiro','SC',0,2500)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Ana','75229844400',17,'F','solteiro','SP',0,1000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Pedro','62672408785',68,'M','casado','SC',3,8000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Paula','92019226634',61,'F','casado','RJ',3,5000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('João','68913646390',56,'M','divorciado','RJ',2,2000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Maria','16898710168',45,'F','divorciado','SP',1,2000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('José','04036455907',30,'M','casado','MA',2,8000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Dinae','73826137124',33,'F','casado','SP',1,10000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Marcos','16883200835',19,'M','solteiro','SC',1,400)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Suzan','12258054222',63,'F','viuva','MA',3,1500)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Luci','97171164071',28,'F','solteiro','SC',2,2500)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Roberto','68551266420',16,'M','solteiro','SP',0,500)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Bruno','44641283605',30,'M','casado','MA',5,8000)</sql>
+		<sql>insert into User (name,cpf,years_old,gender,status,state,dependent,income) values ('Ariel','80858822059',33,'F','viuva','SP',0,10000)</sql>
+	</changeSet>
+</databaseChangeLog>
