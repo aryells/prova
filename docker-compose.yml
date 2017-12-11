@@ -13,15 +13,13 @@ services:
       - user
     environment:
       COM_TECHNICAL_EVALUATION_USER_SERVER_HOST: user
-  nginx:
-    image: nginx
-    ports:
-      - "80:80"
-    volumes:
-      - "./etc/nginx/default.conf:/etc/nginx/conf.d/default.conf"
-      - "./etc/ssl:/etc/ssl"
-      - "./technical-evaluation-webapp:/var/www/html"
-      - "./etc/nginx/default.template.conf:/etc/nginx/conf.d/default.template"
-    depends_on: 
-      - user
-      - credit  
+##  nginx:
+##    image: nginx
+##    ports:
+##      - "80:80"
+##    volumes:
+##      - "./nginx/default.conf:/etc/nginx/conf.d/default.conf"
+##      - "./technical-evaluation-webapp:/var/www/html"
+##    depends_on: 
+##      - user
+##      - credit  
