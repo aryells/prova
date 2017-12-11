@@ -1,0 +1,23 @@
+version: "2.0"
+
+services:
+  user:
+    image: aryel/technical-evaluation-user
+    ports:
+      - "8080:8080"
+  credit:
+    image: aryel/technical-evaluation-credit-check
+    ports:
+      - "8081:8081"
+    depends_on:
+      - user
+    environment:
+      COM_TECHNICAL_EVALUATION_USER_SERVER_HOST: user
+  webapp:
+    build: technical-evaluation-webapp
+    image: aryel/technical-evaluation-webapp
+    ports:
+      - "8082:8082"
+    depends_on: 
+      - user
+      - credit  
